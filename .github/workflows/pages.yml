@@ -1,0 +1,48 @@
+# Náhled webu pro klienta na GitHub Pages.
+# Ostrá verze leží ve složce msroofing/ beze změn. Tady se jen pro náhled
+# doplní cesta repozitáře před odkazy (/assets → /<repo>/assets)
+# a zakáže se indexace, aby Google náhled nebral jako duplicitu.
+name: Náhled na GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Připravit náhled
+        run: |
+          BASE="/${GITHUB_REPOSITORY#*/}"
+          rm -rf _preview && cp -r msroofing _preview
+          find _preview -name '*.html' -print0 | xargs -0 perl -pi -e '
+            s#\b(href|src|action|poster|srcset|imagesrcset|data-full)="/(?!/)#$1="'"$BASE"'/#g;
+            s#, /assets/#, '"$BASE"'/assets/#g;
+            s#<head>#<head><meta name="robots" content="noindex,nofollow">#;
+          '
+          printf 'User-agent: *\nDisallow: /\n' > _preview/robots.txt
+          rm -f _preview/sitemap.xml
+          touch _preview/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _preview
+      - id: deployment
+        uses: actions/deploy-pages@v4
