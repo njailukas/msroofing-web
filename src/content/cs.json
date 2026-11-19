@@ -43,11 +43,11 @@
     "ctaCardBtn": "Nezávazná konzultace",
     "aboutKicker": "Náš příběh",
     "aboutTitle": "Řemeslo, které jsme se naučili v Německu a Nizozemsku",
-    "quote": "„Střecha není jen krytina. Je to tesařské a inženýrské dílo, které chrání váš domov na celý život. U krovů a střech se kompromisy nevyplácí.“",
+    "quote": "„Střecha není jen krytina. Je to tesařské a inženýrské dílo, které chrání váš domov na celý život. U krovů a střech se kompromisy nevyplácejí.“",
     "quoteBy": "Dalibor Mikus, jednatel MSroofing",
     "aboutP": [
-      "Naše cesta začala před 12 lety v zahraničí. Na nejnáročnějších evropských trzích jsme se naučili stavět krovy a střechy na nejvyšší úrovni, kde je přesná tesařina a bezchybná pokrývačská práce jedinou normou.",
-      "Teď tyhle standardy přinášíme k vám. MSroofing je poctivé tesařské a pokrývačské řemeslo s evropskou zkušeností, bez kompromisů v kvalitě a spolehlivosti."
+      "Naše cesta začala před 12 lety v zahraničí. Na nejnáročnějších evropských trzích jsme se naučili stavět krovy a střechy na nejvyšší úrovni, kde jsou přesná tesařina a bezchybná pokrývačská práce samozřejmostí.",
+      "Teď tyto standardy přinášíme k vám. MSroofing je poctivé tesařské a pokrývačské řemeslo s evropskou zkušeností, bez kompromisů v kvalitě a spolehlivosti."
     ],
     "aboutImgAlt": "Tým MSroofing při pokládce pálených tašek",
     "stats": [ { "n": "200+", "l": "dokončených střech" }, { "n": "12 let", "l": "praxe v EU" }, { "n": "10 let", "l": "záruka na práci" }, { "n": "4 země", "l": "CZ, SK, DE, NL" } ],
@@ -171,7 +171,7 @@
       "layersLead": "Krytina je jen to, co vidíte. O životnosti střechy rozhoduje to, co je pod ní. Tohle je sedm vrstev, které stavíme od krovu nahoru.",
       "layers": [
         { "t": "Krov", "d": "Nosná tesařská konstrukce vyrobená na míru. Kvalitní řezivo, přesné spoje a ošetření proti dřevokazným škůdcům a plísním." },
-        { "t": "Zateplení", "d": "Tepelná izolace mezi krokvemi, aby podkroví v zimě nestydlo a v létě se nepřehřívalo." },
+        { "t": "Zateplení", "d": "Tepelná izolace mezi krokvemi, aby podkroví v zimě neprochladlo a v létě se nepřehřívalo." },
         { "t": "Difuzní fólie", "d": "Paropropustná podstřešní fólie. Pustí vlhkost ze stavby ven, ale vodu ani prach dovnitř. Pojistka pod krytinou." },
         { "t": "Kontralatě", "d": "Vytvoří odvětrávanou mezeru mezi fólií a krytinou, kudy odchází vlhkost i teplo. Bez nich střecha „nedýchá“." },
         { "t": "Laťování", "d": "Latě kladené na milimetr přesně podle zvolené krytiny. Na jejich přesnosti stojí rovná a těsná střecha." },
@@ -201,9 +201,9 @@
       "layersTitle": "Skladba ploché střechy",
       "layersLead": "Plochá střecha musí odolat stojící vodě, mrazu i slunci. Tohle je šest vrstev, které ji chrání, od nosné konstrukce nahoru.",
       "layers": [
-        { "t": "Nosná konstrukce", "d": "Betonová deska nebo dřevěný záklop. Musí být rovná, čistá a suchá – kvalita podkladu rozhoduje o všem, co přijde nad ní." },
-        { "t": "Parozábrana", "d": "Zabrání vlhkosti z interiéru, aby pronikla do tepelné izolace a snižovala její účinnost." },
-        { "t": "Tepelná izolace", "d": "Desky kladené na vazbu, bez spár. Podle potřeby se spádovými klíny, aby voda odtékala ke vpustem." },
+        { "t": "Nosná konstrukce", "d": "Betonová deska nebo dřevěný záklop. Musí být rovná, čistá a suchá – kvalita podkladu rozhoduje o všech vrstvách nad ním." },
+        { "t": "Parozábrana", "d": "Zabrání tomu, aby vlhkost z interiéru pronikla do tepelné izolace a snižovala její účinnost." },
+        { "t": "Tepelná izolace", "d": "Desky kladené na vazbu, bez spár. Podle potřeby se spádovými klíny, aby voda odtékala ke vpustím." },
         { "t": "Podkladní asfaltový pás", "d": "První vrstva hydroizolace, která tvoří spolehlivý podklad pro vrchní pás." },
         { "t": "Vrchní pás s posypem", "d": "Modifikovaný asfaltový pás IPA natavený plamenem. Břidličný posyp ho chrání před UV zářením." },
         { "t": "Atika a oplechování", "d": "Vytažení hydroizolace na atiku a její oplechování. Nejrizikovější místo ploché střechy, proto ho děláme nejpečlivěji." }

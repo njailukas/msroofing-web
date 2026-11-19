@@ -46,7 +46,7 @@
     "quote": "„Ein Dach ist nicht nur eine Eindeckung. Es ist ein Zimmerer- und Ingenieurwerk, das Ihr Zuhause ein Leben lang schützt. Bei Dachstühlen und Dächern zahlen sich Kompromisse nicht aus.“",
     "quoteBy": "Dalibor Mikus, Geschäftsführer MSroofing",
     "aboutP": [
-      "Unser Weg begann vor 12 Jahren im Ausland. Auf den anspruchsvollsten europäischen Märkten haben wir gelernt, Dachstühle und Dächer auf höchstem Niveau zu bauen, wo präzise Zimmererarbeit und fehlerfreies Dachdecken die einzige Norm sind.",
+      "Unser Weg begann vor 12 Jahren im Ausland. Auf den anspruchsvollsten europäischen Märkten haben wir gelernt, Dachstühle und Dächer auf höchstem Niveau zu bauen, wo präzise Zimmererarbeit und fehlerfreies Dachdecken selbstverständlich sind.",
       "Diese Standards bringen wir jetzt zu Ihnen. MSroofing steht für ehrliches Zimmerer- und Dachdeckerhandwerk mit europäischer Erfahrung, ohne Kompromisse bei Qualität und Zuverlässigkeit."
     ],
     "aboutImgAlt": "Das MSroofing-Team bei der Verlegung von Tondachziegeln",
@@ -159,7 +159,7 @@
     "pitched": {
       "nav": "Schlüsselfertige Steildächer",
       "title": "Schlüsselfertige Steildächer – Dachstuhl bis Spengler | MSroofing",
-      "desc": "Steildach schlüsselfertig aus einer Hand: Dachstuhl, Dämmung, Unterspannbahn, Lattung, Eindeckung und Spenglerarbeiten. 10 Jahre Garantie, EFH in 7–21 Arbeitstagen.",
+      "desc": "Steildach schlüsselfertig aus einer Hand: Dachstuhl, Dämmung, Unterspannbahn, Lattung, Eindeckung und Verblechung. 10 Jahre Garantie, EFH in 7–21 Arbeitstagen.",
       "h1": "Schlüsselfertige Steildächer",
       "lead": "Wir bauen das ganze Dach vom Dachstuhl bis zur letzten Verblechung. Sie wählen die Eindeckung, den Rest übernehmen wir – mit einer Garantie von 10 Jahren auf den gesamten Aufbau.",
       "facts": ["<strong>7–21</strong> Arbeitstage beim EFH", "<strong>10 Jahre</strong> Garantie auf den Aufbau", "Neubau und <strong>Sanierung</strong>"],
@@ -206,7 +206,7 @@
         { "t": "Wärmedämmung", "d": "Fugenlos im Verband verlegte Dämmplatten, bei Bedarf mit Gefälledämmung zu den Abläufen." },
         { "t": "Unterlagsbahn", "d": "Erste Abdichtungslage, die eine zuverlässige Basis für die Oberlage bildet." },
         { "t": "Oberlage mit Bestreuung", "d": "Modifizierte Bitumenbahn IPA, mit der Flamme aufgeschweißt. Die Schieferbestreuung schützt vor UV-Strahlung." },
-        { "t": "Attika und Verblechung", "d": "Hochführen der Abdichtung an der Attika und deren Verblechung. Die kritischste Stelle eines Flachdachs, deshalb unsere sorgfältigste." }
+        { "t": "Attika und Verblechung", "d": "Hochführen der Abdichtung an der Attika und deren Verblechung. Die kritischste Stelle eines Flachdachs, deshalb arbeiten wir hier besonders sorgfältig." }
       ],
       "note": "<strong>Zwei Lagen Bitumenbahnen bedeuten doppelte Sicherheit.</strong> Selbst wenn die Oberlage beschädigt wird, dringt Wasser nicht sofort in die Konstruktion ein.",
       "scope": ["Besichtigung und Bewertung des bestehenden Dachs", "Vorbereitung und Ausgleich des Untergrunds", "Dampfsperre und Wärmedämmung je nach Aufbau", "Unterlagsbahn und Oberlage IPA", "Anschlüsse an Attiken, Durchdringungen und Abläufe", "Verblechung von Attiken und Traufen", "Aufräumen und Übergabe mit 10 Jahren Garantie"],
@@ -219,7 +219,7 @@
     "truss": {
       "nav": "Dachstühle und Zimmerei",
       "title": "Dachstühle und Zimmererarbeiten – Bau und Sanierung | MSroofing",
-      "desc": "Herstellung und Montage von Dachstühlen nach Maß, Sanierung und Verstärkung alter Dachstühle, Holzschutz. Zimmererarbeiten für Pergolen, Carports und Überdachungen.",
+      "desc": "Dachstühle nach Maß, Sanierung und Verstärkung alter Dachstühle, Holzschutz. Zimmererarbeiten für Pergolen, Carports und Überdachungen.",
       "h1": "Dachstühle und Zimmererarbeiten",
       "lead": "Der Dachstuhl ist die Basis des ganzen Dachs. Wir fertigen und montieren neue Dachstühle nach Maß oder reparieren und verstärken den bestehenden.",
       "facts": ["Neue Dachstühle <strong>nach Maß</strong>", "Sanierung und <strong>Verstärkung</strong>", "Pergolen, Carports, <strong>Überdachungen</strong>"],
@@ -305,7 +305,7 @@
     "shingle": {
       "nav": "Bitumenschindeln",
       "title": "Bitumenschindeln – Verlegung und Sanierung | MSroofing",
-      "desc": "Verlegung von Bitumenschindeln auf vollflächiger Schalung. Ideal für verwinkelte Dächer, Gauben und steile Neigungen. Neueindeckung und Sanierung, 10 Jahre Garantie.",
+      "desc": "Bitumenschindeln auf vollflächiger Schalung – ideal für verwinkelte Dächer, Gauben und steile Neigungen. Neueindeckung und Sanierung, 10 Jahre Garantie.",
       "h1": "Bitumenschindeln",
       "lead": "Leichte und flexible Eindeckung für verwinkelte Dächer, Gauben und steile Neigungen. Wir verlegen sie auf vollflächiger Schalung, damit sie absolut dicht ist.",
       "facts": ["Für <strong>Gauben</strong> und komplexe Formen", "<strong>Leise</strong> bei Regen", "Neueindeckung und <strong>Sanierung</strong>"],
@@ -319,7 +319,7 @@
         { "t": "Sparren", "d": "Die Tragkonstruktion, auf der wir die vollflächige Schalung befestigen." },
         { "t": "Vollflächige Schalung", "d": "Fester, ebener Untergrund aus Brettern oder Platten. Ohne ihn halten Schindeln weder Form noch Dichtheit." },
         { "t": "Unterlagsbahn", "d": "Abdichtungsschicht unter den Schindeln. Die Sicherheit, falls der Wind eine Schindel anhebt." },
-        { "t": "Trauf- und Ortgangblech", "d": "Verblechung der Dachränder, die Wasser von der Schalung weg leitet." },
+        { "t": "Trauf- und Ortgangblech", "d": "Verblechung der Dachränder, die Wasser von der Schalung wegleitet." },
         { "t": "Schindeln", "d": "Im Verband verlegt und nach Herstellervorgabe genagelt. Der Klebestreifen verbindet sie unter Wärme zu einer Fläche." },
         { "t": "Firstschindel und Lüftung", "d": "First aus Firstschindeln mit Entlüftung, damit unter der Schalung keine Feuchtigkeit entsteht." }
       ],
@@ -346,7 +346,7 @@
       "layersLead": "Jedes Blechteil hat am Dach seine Aufgabe. Scrollen Sie weiter und sehen Sie, wo welches hingehört.",
       "layers": [
         { "t": "Eindeckung", "d": "Die Spenglerelemente schließen an die Eindeckung an und müssen mit ihr eine dichte Fläche bilden." },
-        { "t": "First", "d": "Die Firstverblechung schließt den höchsten Punkt des Dachs gegen Regen und Schnee." },
+        { "t": "First", "d": "Die Firstverblechung schützt den höchsten Punkt des Dachs vor Regen und Schnee." },
         { "t": "Ortgangblech", "d": "Schützt den seitlichen Dachrand vor Wasser und Wind." },
         { "t": "Traufblech", "d": "Leitet Wasser von der Eindeckung in die Rinne, damit es nicht über Schalung und Fassade läuft." },
         { "t": "Rinne und Rinnenhaken", "d": "Hängerinne an Rinnenhaken, im richtigen Gefälle zum Fallrohr." },
@@ -356,7 +356,7 @@
       "note": "<strong>Spenglerarbeiten machen wir auch einzeln.</strong> Undicht am Kamin oder neue Rinnen nötig? Dafür müssen Sie nicht das ganze Dach erneuern.",
       "scope": ["Besichtigung und Finden der undichten Stelle", "Kaminverblechung und Wandanschlüsse", "Kehlen und Einfassung von Dachfenstern", "Ortgangbleche und Firstverblechung", "Traufbleche", "Rinnen, Rinnenkessel und Fallrohre", "Materialien: Titanzink, Kupfer, Aluminium"],
       "faq": [
-        { "q": "Am Kamin ist es undicht. Muss das ganze Dach neu?", "a": "Meistens nicht. Oft genügt eine neue Kaminverblechung und die Reparatur der angrenzenden Eindeckung. Bei der Besichtigung finden wir heraus, wo das Wasser genau eindringt." },
+        { "q": "Am Kamin ist es undicht. Muss das ganze Dach neu?", "a": "Meistens nicht. Oft genügen eine neue Kaminverblechung und die Reparatur der angrenzenden Eindeckung. Bei der Besichtigung finden wir heraus, wo das Wasser genau eindringt." },
         { "q": "Titanzink, Kupfer oder Aluminium?", "a": "Titanzink ist robust und bekommt mit der Zeit eine natürliche Patina. Kupfer ist sehr langlebig und repräsentativ. Aluminium ist leicht und günstiger. Wir beraten je nach Haus und Budget." },
         { "q": "Tauschen Sie auch nur Rinnen und Fallrohre?", "a": "Ja, wir liefern und montieren Rinnen, Rinnenkessel und Fallrohre auch einzeln am bestehenden Dach." }
       ]

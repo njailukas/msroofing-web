@@ -27,7 +27,7 @@
   },
   "home": {
     "title": "Turnkey Pitched Roofs, Roof Trusses & Roofing | MSroofing",
-    "desc": "Turnkey pitched and flat roofs, roof trusses, tiles, Gerard and Satjam metal roofing, shingles and flashing. 200+ projects, 10-year warranty, free quote in 24 h.",
+    "desc": "Turnkey pitched and flat roofs, roof trusses, tiles, Gerard and Satjam metal roofing, shingles and flashing. 200+ projects, 10-year warranty, free quote.",
     "ogTitle": "Turnkey roofs – from the timber frame to the last piece of flashing | MSroofing",
     "ogDesc": "Carpenters and roofers with 12 years of experience in Germany and the Netherlands. 200+ projects, 10-year warranty, free quote.",
     "ogAlt": "Family house with a new Gerard metal roof by MSroofing",
@@ -46,7 +46,7 @@
     "quote": "“A roof isn't just a covering. It's a piece of carpentry and engineering that protects your home for a lifetime. With roof structures and roofs, compromises never pay off.”",
     "quoteBy": "Dalibor Mikus, Managing Director, MSroofing",
     "aboutP": [
-      "Our journey began abroad 12 years ago. On Europe's most demanding markets we learned to build roof structures and roofs to the highest standard, where precise carpentry and flawless roofing are the only norm.",
+      "Our journey began abroad 12 years ago. In Europe's most demanding markets we learned to build roof structures and roofs to the highest standard, where precise carpentry and flawless roofing are taken for granted.",
       "Now we bring those standards to you. MSroofing stands for honest carpentry and roofing backed by European experience, with no compromises on quality or reliability."
     ],
     "aboutImgAlt": "The MSroofing team laying clay roof tiles",
@@ -159,20 +159,20 @@
     "pitched": {
       "nav": "Turnkey pitched roofs",
       "title": "Turnkey Pitched Roofs – Frame, Covering, Flashing | MSroofing",
-      "desc": "A turnkey pitched roof from one company: timber frame, insulation, membrane, battens, covering and flashing. 10-year warranty, a family house in 7–21 working days.",
+      "desc": "Turnkey pitched roofs from one company: timber frame, insulation, membrane, battens, covering and flashing. 10-year warranty, done in 7–21 working days.",
       "h1": "Turnkey pitched roofs",
       "lead": "We build the whole roof, from the timber frame to the last piece of flashing. You choose the covering, we handle the rest – with one 10-year warranty on the entire build-up.",
       "facts": ["<strong>7–21</strong> working days for a house", "<strong>10-year</strong> warranty on the build-up", "New builds and <strong>renovations</strong>"],
       "card": "The complete roof, from timber frame to flashing. One company, one warranty.",
       "heroAlt": "Laying roofing on a pitched roof",
       "introTitle": "One company instead of four trades",
-      "intro": "On a pitched roof, things usually go wrong where two trades meet: the carpenter hands over the frame, the roofer lays the covering, the metalworker adds the flashing – and when it leaks, it's nobody's fault. We build the whole build-up ourselves, from survey and material take-off to the final details.",
+      "intro": "On a pitched roof, things usually go wrong where two trades meet: the carpenter hands over the frame, the roofer lays the covering, the metalworker adds the flashing – and when it leaks, it's nobody's fault. We build every layer ourselves, from survey and material take-off to the final details.",
       "layersTitle": "What goes into a turnkey pitched roof",
       "layersLead": "The covering is only what you see. What lies underneath decides how long the roof lasts. These are the seven layers we build, from the structure up.",
       "layers": [
         { "t": "Roof structure", "d": "The load-bearing timber frame, made to measure. Quality timber, precise joints and treatment against wood pests and mould." },
         { "t": "Insulation", "d": "Thermal insulation between the rafters, so the attic stays warm in winter and doesn't overheat in summer." },
-        { "t": "Breathable membrane", "d": "A vapour-permeable underlay. It lets moisture out of the structure but keeps water and dust out." },
+        { "t": "Breathable membrane", "d": "A vapour-permeable underlay. It lets moisture escape from the structure but keeps rain and dust out." },
         { "t": "Counter battens", "d": "Create a ventilated gap between membrane and covering, letting moisture and heat escape." },
         { "t": "Battens", "d": "Set to the millimetre for the chosen covering. Their accuracy is what makes a roof straight and watertight." },
         { "t": "Roof covering", "d": "Clay or concrete tiles, asphalt shingles, or lightweight Gerard or Satjam metal. We choose together based on the house, pitch and budget." },
@@ -213,7 +213,7 @@
       "faq": [
         { "q": "Repair a flat roof or replace it?", "a": "It depends on the state of the substrate and insulation. If the insulation is dry, new waterproofing is often enough. If it's wet, a complete new build-up pays off. We'll assess it during a free inspection." },
         { "q": "Why two layers of bitumen membrane?", "a": "A two-layer system is tougher and more reliable. The base membrane forms the first waterproofing layer, and the granulated cap sheet protects it from UV and mechanical damage." },
-        { "q": "Do you do small flat roofs, like garages?", "a": "Yes. We do flat roofs on garages, extensions, family houses and apartment blocks." }
+        { "q": "Do you also do small flat roofs, such as on garages?", "a": "Yes. We do flat roofs on garages, extensions, family houses and apartment blocks." }
       ]
     },
     "truss": {
@@ -259,7 +259,7 @@
       "layersLead": "A tiled roof is a system where every layer has a job. These are the six layers we build under and with the tiles.",
       "layers": [
         { "t": "Rafters", "d": "The structure, which we check first. Tiles are heavier and the frame must carry them safely." },
-        { "t": "Breathable membrane", "d": "A vapour-permeable safety layer under the covering. Moisture out, water not in." },
+        { "t": "Breathable membrane", "d": "A vapour-permeable safety layer under the covering. Moisture gets out, rain stays out." },
         { "t": "Counter battens", "d": "Create the ventilated gap through which moisture and heat escape from under the tiles." },
         { "t": "Battens", "d": "We set the batten gauge exactly to the tile model. That's what makes a straight, watertight roof." },
         { "t": "Tiles", "d": "Clay or concrete tiles laid in bond, clipped against wind uplift in exposed areas." },
@@ -320,14 +320,14 @@
         { "t": "Full boarding", "d": "A solid, level base of boards or panels. Without it, shingles hold neither their shape nor a seal." },
         { "t": "Underlayment", "d": "A waterproofing layer under the shingles. Insurance in case wind lifts a shingle." },
         { "t": "Drip edge and verge trim", "d": "Metal edging that leads water away from the boarding." },
-        { "t": "Shingles", "d": "Laid in bond and nailed to the manufacturer's spec. The self-sealing strip bonds them into one surface in the warmth." },
+        { "t": "Shingles", "d": "Laid in bond and nailed to the manufacturer's spec. The self-sealing strip bonds them into one surface once the sun warms them." },
         { "t": "Ridge cap and ventilation", "d": "Ridge of shingle caps with ventilation, so no moisture builds up under the boarding." }
       ],
       "note": "<strong>A shingle is only as good as the boarding under it.</strong> That's why we always check it on renovations and replace damaged boards.",
       "scope": ["Removing the old covering", "Checking structure and boarding, replacing damaged parts", "Underlayment", "Drip edges and verge trims", "Laying the shingles", "Ventilated ridge", "Valleys, chimney and window flashing", "Clean-up and handover with a 10-year warranty"],
       "faq": [
         { "q": "What roof pitch suits shingles?", "a": "Shingles suit mainly steep and complex roofs. The minimum pitch is set by the shingle manufacturer – we'll tell you during the survey whether they suit your roof." },
-        { "q": "Why is full boarding needed?", "a": "Shingles are flexible and don't carry themselves. Boarding gives them a solid, level base to nail into. Without it, the roof wouldn't be watertight." },
+        { "q": "Why is full boarding needed?", "a": "Shingles are flexible and not self-supporting. Boarding gives them a solid, level base to nail into. Without it, the roof wouldn't be watertight." },
         { "q": "How long do shingles last?", "a": "Their life depends on the quality of the shingle and the installation. Quality shingles carry a long manufacturer's warranty. We give 10 years on our work." }
       ]
     },
@@ -353,10 +353,10 @@
         { "t": "Outlet and downpipe", "d": "Carries water from the gutter safely to the ground, away from the foundations." },
         { "t": "Chimney flashing", "d": "The most common leak point. We make the flashing around the chimney by hand so it fits exactly." }
       ],
-      "note": "<strong>We also do metalwork on its own.</strong> A leak around the chimney or need new gutters? You don't have to replace the whole roof.",
+      "note": "<strong>We also do metalwork on its own.</strong> Leaking around the chimney, or need new gutters? You don't have to replace the whole roof.",
       "scope": ["Inspection and finding the leak", "Chimney flashing and wall abutments", "Valleys and roof window flashing", "Verge trims and ridge flashing", "Drip edges", "Gutters, outlets and downpipes", "Materials: titanium zinc, copper, aluminium"],
       "faq": [
-        { "q": "It leaks around my chimney. Do I need a new roof?", "a": "Usually not. Often new chimney flashing and a repair of the adjoining covering is enough. During the inspection we find exactly where the water gets in." },
+        { "q": "It leaks around my chimney. Do I need a new roof?", "a": "Usually not. Often new chimney flashing and a repair of the adjoining covering are enough. During the inspection we find exactly where the water gets in." },
         { "q": "Titanium zinc, copper or aluminium?", "a": "Titanium zinc is durable and develops a natural patina over time. Copper is very long-lasting and prestigious. Aluminium is light and more affordable. We'll advise based on your house and budget." },
         { "q": "Do you replace just gutters and downpipes?", "a": "Yes, we supply and fit gutters, outlets and downpipes on their own for existing roofs." }
       ]

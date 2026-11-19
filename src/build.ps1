@@ -19,7 +19,21 @@ $IMGDIR = $site.imgDir
 function Img([string]$file, [int]$w) { return $IMGDIR + $site.images.$file + "-$w.jpg" }
 function AbsImg([string]$file) { return $site.base + (Img $file 1600) }
 function SrcSet([string]$file) { return (($site.sizes | ForEach-Object { "$(Img $file $_) ${_}w" }) -join ', ') }
-function Pic([string]$file, [string]$alt, [string]$sizes, [string]$extra) { return "<img src=`"$(Img $file 800)`" srcset=`"$(SrcSet $file)`" sizes=`"$sizes`" alt=`"$(Enc $alt)`"$extra>" }
+# Skutečné rozměry obrázku (z 800px verze) pro atributy width/height – prohlížeč si předem rezervuje místo
+Add-Type -AssemblyName System.Drawing
+$DIMCACHE = @{}
+function ImgDim([string]$file) {
+  if (-not $DIMCACHE.ContainsKey($file)) {
+    $p = Join-Path $out ((Img $file 800).TrimStart('/').Replace('/', '\'))
+    $im = [System.Drawing.Image]::FromFile($p)
+    $DIMCACHE[$file] = @($im.Width, $im.Height); $im.Dispose()
+  }
+  return $DIMCACHE[$file]
+}
+function Pic([string]$file, [string]$alt, [string]$sizes, [string]$extra) {
+  $wh = ImgDim $file
+  return "<img src=`"$(Img $file 800)`" srcset=`"$(SrcSet $file)`" sizes=`"$sizes`" width=`"$($wh[0])`" height=`"$($wh[1])`" alt=`"$(Enc $alt)`"$extra>"
+}
 $LOGO = $IMGDIR + $site.images.'logo.jpg' + '-400.jpg'
 $LABEL = @{ cs = 'CZ'; de = 'DE'; en = 'EN' }
 $HREFLANG = @{ cs = 'cs'; de = 'de'; en = 'en' }
@@ -103,7 +117,9 @@ $altLoc
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="$($pg.preload)"$($pg.preloadSet) fetchpriority="high">
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/assets/css/style.css">
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -286,7 +302,7 @@ function Footer([string]$l) {
 </footer>
 <dialog class="lightbox" id="lightbox" aria-label="$(Enc $LB.aria)">
   <figure class="lb-fig">
-    <img src="" alt="">
+    <img alt="">
     <button class="lb-btn lb-prev" type="button" aria-label="$(Enc $LB.prev)">&lsaquo;</button>
     <button class="lb-btn lb-next" type="button" aria-label="$(Enc $LB.next)">&rsaquo;</button>
     <button class="lb-close" type="button" aria-label="$(Enc $LB.close)">&times;</button>
