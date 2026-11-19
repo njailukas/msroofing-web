@@ -67,16 +67,23 @@ button,input,select,textarea{font:inherit;color:inherit}
   .nav-toggle{display:inline-flex}
   .header-cta{margin-left:auto;gap:4px}
   .header-cta .btn{display:none}
-  .header-phone span{display:inline}
   .primary-nav{position:fixed;inset:var(--header-h) 0 0 0;background:var(--ink);margin:0;padding:12px var(--gutter) 32px;overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .2s,transform .2s,visibility 0s .2s}
   .menu-open .primary-nav{visibility:visible;opacity:1;transform:none;transition:opacity .2s,transform .2s}
   .primary-nav ul{flex-direction:column;gap:0}
   .primary-nav a{font:600 1.5rem/1.2 var(--ff-head);letter-spacing:-.02em;color:#fff;padding:16px 0;border-bottom:1px solid var(--line-dark);border-radius:0}
-  .primary-nav .nav-extra{display:grid;gap:10px;margin-top:24px}
+  .primary-nav .nav-extra{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:24px}
   .primary-nav .nav-extra .btn{display:flex;width:100%;font:600 1rem/1.2 var(--ff-body);padding:.8em 1em;border-bottom:0;border-radius:var(--radius)}
   .menu-open body{overflow:hidden}
 }
-@media (max-width:480px){.header-phone span{display:none}.header-phone{width:44px;height:44px;justify-content:center;border-radius:50%;background:rgba(255,255,255,.08)}.brand img{height:30px}}
+.hp-call{display:none}
+@media (max-width:767px){
+  .header-phone{min-height:42px;padding:0 14px 0 12px;gap:7px;border-radius:999px;background:var(--accent);color:var(--ink);font-weight:700}
+  .header-phone svg{color:var(--ink)}
+  .header-phone .hp-num{display:none}
+  .header-phone .hp-call{display:inline}
+  .header-phone:active{transform:scale(.97)}
+}
+@media (max-width:480px){.brand img{height:30px}.btn{white-space:normal;text-align:center}.header-phone{white-space:nowrap}}
 @media (min-width:1200px){.primary-nav .nav-extra{display:none}}
 
 /* ===== Language switcher ===== */
@@ -181,13 +188,13 @@ button,input,select,textarea{font:inherit;color:inherit}
 .scope-grid .btn{margin-top:28px}
 @media (max-width:860px){.scope-grid{grid-template-columns:1fr}.scope-img{aspect-ratio:16/10}}
 
-.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .mini{display:flex;align-items:center;gap:14px;padding:12px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff;text-decoration:none;transition:border-color .2s,box-shadow .2s}
 .mini:hover{border-color:var(--ink);box-shadow:0 8px 20px rgba(22,24,26,.08)}
 .mini img{width:72px;height:56px;object-fit:cover;border-radius:var(--radius);flex:none}
-.mini span{font-weight:600;line-height:1.3}
+.mini span{font-weight:600;line-height:1.3;min-width:0;overflow-wrap:anywhere;hyphens:auto}
 .mini svg{width:18px;height:18px;margin-left:auto;flex:none}
-@media (max-width:900px){.mini-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.mini-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.mini-grid{grid-template-columns:1fr}}
 
 /* ===== Layer stack ===== */
@@ -220,17 +227,17 @@ button,input,select,textarea{font:inherit;color:inherit}
 }
 
 /* ===== References ===== */
-.ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 20px}
+.ref-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 20px}
 .ref-open{display:block;width:100%;padding:0;border:0;background:var(--stone);border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;cursor:zoom-in;position:relative}
 .ref-open img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .ref-open:hover img{transform:scale(1.04)}
-.ref-tag{display:block;margin-top:14px;font-size:.85rem;color:var(--muted);font-weight:500}
-.ref-card h3{font-size:1.15rem;letter-spacing:-.01em;margin-top:4px}
+.ref-tag{display:block;overflow-wrap:break-word;hyphens:auto;margin-top:14px;font-size:.85rem;color:var(--muted);font-weight:500}
+.ref-card h3{font-size:1.15rem;letter-spacing:-.01em;margin-top:4px;overflow-wrap:break-word;hyphens:auto}
 .ref-card p{font-size:.95rem;color:var(--muted);margin-top:6px}
 .ref-more{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;margin-top:48px;padding:24px;border-radius:var(--radius-lg);background:var(--stone)}
 .section-stone .ref-more{background:#fff}
 .ref-more p{max-width:60ch}
-@media (max-width:980px){.ref-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:980px){.ref-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){
   .ref-grid{gap:20px 12px}
   .ref-open{border-radius:var(--radius)}
@@ -320,15 +327,6 @@ dialog.lightbox::backdrop{background:rgba(10,11,12,.9)}
 .footer-bottom nav{display:flex;gap:18px}
 @media (max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1 / -1}}
 
-/* ===== Mobile CTA bar ===== */
-.mobile-cta{display:none}
-@media (max-width:767px){
-  .mobile-cta{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(22,24,26,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line-dark)}
-  .mobile-cta .btn{min-height:48px;padding:.6em .8em}
-  .site-footer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
-  .menu-open .mobile-cta{display:none}
-}
-
 /* ===== Cookie bar ===== */
 .cookie{position:fixed;z-index:120;left:16px;right:16px;bottom:16px;max-width:520px;margin-left:auto;background:#fff;color:var(--ink);border-radius:var(--radius-lg);padding:18px 18px 16px;box-shadow:0 16px 48px rgba(0,0,0,.28);font-size:.93rem}
 .cookie[hidden]{display:none}
@@ -336,7 +334,7 @@ dialog.lightbox::backdrop{background:rgba(10,11,12,.9)}
 .cookie p a{color:var(--ink)}
 .cookie-actions{display:flex;gap:8px;margin-top:14px}
 .cookie-actions .btn{flex:1;min-height:44px;font-size:.95rem}
-@media (max-width:767px){.cookie{bottom:calc(76px + env(safe-area-inset-bottom));left:12px;right:12px}}
+@media (max-width:767px){.cookie{bottom:calc(12px + env(safe-area-inset-bottom));left:12px;right:12px}}
 
 /* ===== Animovaná ikona telefonu (zvonění) ===== */
 .ring{overflow:visible}

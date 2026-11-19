@@ -148,7 +148,7 @@ function Header([string]$l, $alts) {
     </nav>
     <div class="header-cta">
       $ls
-      <a class="header-phone" href="tel:$($site.phone)" aria-label="$(Enc "$($U.callBtn) $($site.phoneDisplay)")">$icPhone<span>$($site.phoneDisplay)</span></a>
+      <a class="header-phone" href="tel:$($site.phone)" aria-label="$(Enc "$($U.callBtn) $($site.phoneDisplay)")">$icPhone<span class="hp-num">$($site.phoneDisplay)</span><span class="hp-call">$($U.callBtn)</span></a>
       <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Menu"><span></span></button>
     </div>
   </div>
@@ -280,10 +280,6 @@ function Footer([string]$l) {
     </div>
   </div>
 </footer>
-<div class="mobile-cta">
-  <a class="btn btn-ghost" href="tel:$($site.phone)">$icPhone$($U.callBtn)</a>
-  <a class="btn btn-primary" href="#$($id.contact)">$($U.ctaShort)</a>
-</div>
 <dialog class="lightbox" id="lightbox" aria-label="$(Enc $LB.aria)">
   <figure class="lb-fig">
     <img src="" alt="">
