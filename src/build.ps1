@@ -434,14 +434,12 @@ function BuildService([string]$l, $svc) {
   <div class="wrap">
     <div class="section-head"><div><span class="kicker">$($V.layersKicker)</span><h2 id="layers-title">$($S.layersTitle)</h2><p>$($S.layersLead)</p></div></div>
     <div class="stack-grid">
-      <div class="stack-sticky"><div class="stack-figure" id="stack-figure" data-stack="$($svc.stack)" aria-hidden="true"></div></div>
-      <div>
-        <ol class="layer-list">
+      <div class="stack-sticky"><div class="stack-figure" id="stack-figure" data-stack="$($svc.stack)" aria-hidden="true"></div><div class="stack-dots" aria-hidden="true"></div><div class="stack-caption" aria-hidden="true"></div></div>
+      <ol class="layer-list">
 $layers
-        </ol>
-        <p class="stack-note">$($S.note)</p>
-      </div>
+      </ol>
     </div>
+    <p class="stack-note">$($S.note)</p>
   </div>
 </section>
 

@@ -212,26 +212,56 @@
       '" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg"><g stroke="rgba(0,0,0,.18)" stroke-width=".6" stroke-linejoin="round">' + body + '</g></svg>';
 
     var section = fig.closest('section');
-    var items = [].slice.call(doc.querySelectorAll('.layer-item'));
+    var grid = fig.closest('.stack-grid');
+    var sticky = fig.closest('.stack-sticky');
+    var items = [].slice.call(doc.querySelectorAll('.layer-list .layer-item'));
     var lyEls = [].slice.call(fig.querySelectorAll('.ly'));
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var current = -2;
     section.classList.add('is-animated');
+
+    // Mobil: pevná „scéna“ – schéma, ukazatel postupu a popis aktuální vrstvy.
+    // Seznam pod ní slouží jen jako dráha pro scroll, popisy se jen prolínají.
+    var dotsBox = sticky.querySelector('.stack-dots');
+    var capBox = sticky.querySelector('.stack-caption');
+    var dots = [], caps = [];
+    if (!reduce && dotsBox && capBox) {
+      items.forEach(function (li, k) {
+        var dot = doc.createElement('i'); dotsBox.appendChild(dot); dots.push(dot);
+        var cap = doc.createElement('div'); cap.className = 'cap';
+        cap.innerHTML = '<span class="layer-num">' + (k + 1) + '</span><div><b></b><p></p></div>';
+        cap.querySelector('b').textContent = li.querySelector('h3').textContent;
+        cap.querySelector('p').textContent = li.querySelector('p').textContent;
+        capBox.appendChild(cap); caps.push(cap);
+      });
+      section.classList.add('is-stage');
+    }
+    var stageMq = window.matchMedia('(max-width: 699px) and (min-height: 520px)');
 
     var setActive = function (a) {
       if (a === current) return;
       current = a;
       lyEls.forEach(function (el, k) { el.classList.toggle('on', k <= a); el.classList.toggle('cur', k === a); });
       items.forEach(function (el, k) { el.classList.toggle('active', k === a); el.classList.toggle('done', k < a); });
+      dots.forEach(function (el, k) { el.classList.toggle('on', k <= a); });
+      caps.forEach(function (el, k) { el.classList.toggle('on', k === a); });
     };
     if (reduce) { setActive(items.length - 1); }
     else {
       var ticking = false;
       var update = function () {
         ticking = false;
-        var mobile = window.innerWidth < 700;
-        var refLine = window.innerHeight * (mobile ? 0.72 : 0.55);
         var a = -1;
+        if (caps.length && stageMq.matches) {
+          // podle toho, jak daleko je scéna „přišpendlená“
+          var top = parseFloat(getComputedStyle(sticky).top) || 0;
+          var run = grid.offsetHeight - sticky.offsetHeight;
+          var p = run > 0 ? (top - grid.getBoundingClientRect().top) / run : 0;
+          a = Math.floor(p * items.length);
+          setActive(Math.min(items.length - 1, Math.max(0, a)));
+          return;
+        }
+        var refLine = window.innerHeight * (window.innerWidth < 700 ? 0.72 : 0.55);
         for (var n = 0; n < items.length; n++) if (items[n].getBoundingClientRect().top < refLine) a = n;
         setActive(Math.max(0, a));
       };

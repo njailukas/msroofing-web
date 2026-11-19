@@ -233,12 +233,30 @@ button,input,select,textarea{font:inherit;color:inherit}
 .layer-item h3{font-size:1.3rem;letter-spacing:-.015em;margin-top:2px}
 .layer-item p{color:var(--muted);margin-top:4px}
 .stack-note{margin-top:28px;padding:18px 20px;border-left:3px solid var(--accent);background:#fff;border-radius:0 var(--radius) var(--radius) 0;font-size:.98rem}
+@media (min-width:700px){.stack-note{width:calc((100% - clamp(24px,5vw,72px)) / 2.05);margin-left:auto}}
+.stack-dots,.stack-caption{display:none}
 @media (max-width:699px){
   .stack-grid{grid-template-columns:1fr;gap:0}
-  .stack-sticky{top:var(--header-h);z-index:2;background:var(--stone);margin-inline:calc(var(--gutter) * -1);padding:8px var(--gutter) 6px;box-shadow:0 10px 16px -12px rgba(0,0,0,.25)}
+  .stack-sticky{top:var(--header-h);z-index:2;background:var(--stone);padding:8px 0 6px}
   .stack-figure{height:min(38vh,320px);max-height:none;aspect-ratio:auto}
   .is-animated .layer-item{min-height:32vh}
   .is-animated .layer-item:last-child{min-height:24vh}
+}
+/* Mobil: schéma i popis stojí na místě, při scrollu se jen vyměňují */
+@media (max-width:699px) and (min-height:520px){
+  .is-stage .stack-sticky{height:calc(100vh - var(--header-h));height:calc(100svh - var(--header-h));display:flex;flex-direction:column;justify-content:center;padding:12px 0 24px;overflow:hidden}
+  .is-stage .stack-figure{flex:1 1 auto;min-height:0;height:auto;max-height:min(46svh,380px);width:100%}
+  .is-stage .stack-dots{display:flex;justify-content:center;gap:6px;margin:14px 0 18px}
+  .is-stage .stack-dots i{width:22px;height:3px;border-radius:2px;background:#cfd1cb;transition:background-color .3s}
+  .is-stage .stack-dots i.on{background:var(--ink)}
+  .is-stage .stack-caption{display:grid}
+  .is-stage .stack-caption .cap{grid-area:1 / 1;display:grid;grid-template-columns:36px 1fr;gap:4px 14px;align-content:start;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility 0s .35s}
+  .is-stage .stack-caption .cap.on{opacity:1;visibility:visible;transition:opacity .35s ease .1s,visibility 0s}
+  .is-stage .stack-caption .layer-num{background:var(--accent);border-color:var(--ink);color:var(--ink)}
+  .is-stage .stack-caption b{display:block;font:600 1.25rem/1.25 var(--ff-head);letter-spacing:-.015em;margin-top:3px}
+  .is-stage .stack-caption p{color:var(--muted);margin-top:4px;font-size:.98rem}
+  .is-stage .layer-list .layer-item{opacity:0!important;min-height:45vh;border:0}
+  .is-stage .layer-list .layer-item:last-child{min-height:30vh}
 }
 
 /* ===== References ===== */
