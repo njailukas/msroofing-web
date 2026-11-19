@@ -143,7 +143,6 @@ function Header([string]$l, $alts) {
       <div class="nav-extra">
         $ls
         <a class="btn btn-primary" href="#$($id.contact)">$($U.ctaLong)</a>
-        <a class="btn btn-ghost" href="tel:$($site.phone)">$icPhone $($U.callBtn) $($site.phoneDisplay)</a>
       </div>
     </nav>
     <div class="header-cta">
