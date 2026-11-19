@@ -162,6 +162,11 @@ function TrustList([string]$l, $items, [string]$cls) {
   return "<ul class=`"trust $cls`" aria-label=`"$(Enc $C[$l].ui.trustAria)`">$li</ul>"
 }
 
+function StatList([string]$l, $items) {
+  $li = ($items | ForEach-Object { "<li><strong>$(Enc $_.v)</strong><span>$(Enc $_.l)</span></li>" }) -join ''
+  return "<ul class=`"hero-stats`" aria-label=`"$(Enc $C[$l].ui.trustAria)`">$li</ul>"
+}
+
 function HeroActions([string]$l) {
   $U = $C[$l].ui
   return "<div class=`"hero-actions`"><a class=`"btn btn-primary`" href=`"#$($C[$l].ids.contact)`">$($U.ctaLong) $icArrow</a><a class=`"btn btn-ghost`" href=`"tel:$($site.phone)`">$icPhone $($site.phoneDisplay)</a></div>"
@@ -335,7 +340,7 @@ function BuildHome([string]$l) {
     <h1 id="hero-title">$($M.h1)</h1>
     <p class="hero-lead">$($M.lead)</p>
     $(HeroActions $l)
-    $(TrustList $l $M.trust '')
+    $(StatList $l $M.heroStats)
   </div>
 </section>
 
