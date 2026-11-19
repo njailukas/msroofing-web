@@ -332,16 +332,16 @@ function BuildHome([string]$l) {
   $refs = ($site.homeRefs | ForEach-Object { RefCard $l $_ }) -join "`n"
 
   $body = @"
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero hero--home" aria-labelledby="hero-title">
   <div class="hero-media"><video class="hero-video" autoplay muted loop playsinline preload="auto" poster="$(Img $site.poster 800)" aria-hidden="true"><source src="$($site.video)" type="video/mp4"></video></div>
   <div class="wrap hero-in">
     <span class="eyebrow">$($M.eyebrow)</span>
     <h1 id="hero-title">$($M.h1)</h1>
     <p class="hero-lead">$($M.lead)</p>
     $(HeroActions $l)
-    $(StatList $l $M.heroStats)
   </div>
 </section>
+<div class="stats-band"><div class="wrap">$(StatList $l $M.heroStats)</div></div>
 
 <section class="section" id="$($id.services)" aria-labelledby="svc-title">
   <div class="wrap">
