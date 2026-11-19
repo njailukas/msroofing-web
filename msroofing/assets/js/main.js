@@ -244,7 +244,7 @@
       lyEls.forEach(function (el, k) { el.classList.toggle('on', k <= a); el.classList.toggle('cur', k === a); });
       items.forEach(function (el, k) { el.classList.toggle('active', k === a); el.classList.toggle('done', k < a); });
       dots.forEach(function (el, k) { el.classList.toggle('on', k <= a); });
-      caps.forEach(function (el, k) { el.classList.toggle('on', k === a); });
+      caps.forEach(function (el, k) { el.classList.toggle('on', k === a); el.classList.toggle('done', k < a); });
     };
     if (reduce) { setActive(items.length - 1); }
     else {

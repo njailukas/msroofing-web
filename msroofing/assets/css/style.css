@@ -220,10 +220,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 .stack-figure .mk text{font:600 11px var(--ff-body);fill:var(--muted)}
 .stack-figure .ly.cur .mk circle{fill:var(--accent);stroke:var(--ink)}
 .stack-figure .ly.cur .mk text{fill:var(--ink)}
-.is-animated .stack-figure .ly{opacity:0;transition:opacity .4s ease}
+.is-animated .stack-figure .ly{opacity:0;transition:opacity .6s cubic-bezier(.4,0,.2,1)}
 .is-animated .stack-figure .ly.on{opacity:1}
 .stack-figure .mk circle,.stack-figure .mk text{transition:fill .3s,stroke .3s}
-.layer-item{display:grid;grid-template-columns:36px 1fr;grid-template-rows:auto 1fr;align-content:start;gap:4px 16px;padding:22px 0;border-top:1px solid var(--line);transition:opacity .35s}
+.layer-item{display:grid;grid-template-columns:36px 1fr;grid-template-rows:auto 1fr;align-content:start;gap:4px 16px;padding:22px 0;border-top:1px solid var(--line);transition:opacity .6s cubic-bezier(.4,0,.2,1)}
 .layer-item:last-child{border-bottom:1px solid var(--line)}
 .is-animated .layer-item{opacity:.38;min-height:30vh}
 .is-animated .layer-item.done{opacity:.6}
@@ -247,11 +247,12 @@ button,input,select,textarea{font:inherit;color:inherit}
   .is-stage .stack-sticky{height:calc(100vh - var(--header-h));height:calc(100svh - var(--header-h));display:flex;flex-direction:column;justify-content:center;padding:12px 0 24px;overflow:hidden}
   .is-stage .stack-figure{flex:1 1 auto;min-height:0;height:auto;max-height:min(46svh,380px);width:100%}
   .is-stage .stack-dots{display:flex;justify-content:center;gap:6px;margin:14px 0 18px}
-  .is-stage .stack-dots i{width:22px;height:3px;border-radius:2px;background:#cfd1cb;transition:background-color .3s}
+  .is-stage .stack-dots i{width:22px;height:3px;border-radius:2px;background:#cfd1cb;transition:background-color .5s ease}
   .is-stage .stack-dots i.on{background:var(--ink)}
   .is-stage .stack-caption{display:grid}
-  .is-stage .stack-caption .cap{grid-area:1 / 1;display:grid;grid-template-columns:36px 1fr;gap:4px 14px;align-content:start;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility 0s .35s}
-  .is-stage .stack-caption .cap.on{opacity:1;visibility:visible;transition:opacity .35s ease .1s,visibility 0s}
+  .is-stage .stack-caption .cap{grid-area:1 / 1;display:grid;grid-template-columns:36px 1fr;gap:4px 14px;align-content:start;opacity:0;transform:translateY(12px);visibility:hidden;transition:opacity .3s ease-in,transform .3s ease-in,visibility 0s .3s}
+  .is-stage .stack-caption .cap.done{transform:translateY(-12px)}
+  .is-stage .stack-caption .cap.on{opacity:1;transform:none;visibility:visible;transition:opacity .6s cubic-bezier(.22,.61,.36,1) .25s,transform .6s cubic-bezier(.22,.61,.36,1) .25s,visibility 0s .25s}
   .is-stage .stack-caption .layer-num{background:var(--accent);border-color:var(--ink);color:var(--ink)}
   .is-stage .stack-caption b{display:block;font:600 1.25rem/1.25 var(--ff-head);letter-spacing:-.015em;margin-top:3px}
   .is-stage .stack-caption p{color:var(--muted);margin-top:4px;font-size:.98rem}
