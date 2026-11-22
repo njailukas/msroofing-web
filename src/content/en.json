@@ -34,7 +34,7 @@
     "eyebrow": "12 years of experience in Germany and the Netherlands",
     "h1": "Turnkey roofs – from the timber frame to the last piece of flashing",
     "lead": "Timber frame, roof covering and flashing from one company. A 10-year workmanship warranty and a free quote.",
-    "heroStats": [{ "v": "200+", "l": "roofs completed" }, { "v": "10 years", "l": "workmanship warranty" }, { "v": "24 h", "l": "to get a quote" }, { "v": "4 countries", "l": "CZ · SK · DE · NL" }],
+    "heroStats": [{ "v": "200+", "l": "roofs completed" }, { "v": "10 years", "l": "workmanship warranty" }, { "v": "12 years", "l": "experience in the EU" }, { "v": "4 countries", "l": "CZ · SK · DE · NL" }],
     "svcKicker": "Services",
     "svcTitle": "Everything for your roof, from one company",
     "svcLead": "New builds and renovations. Pick what you need and see how we work and what you get.",
@@ -63,7 +63,7 @@
       { "q": "How long does a turnkey roof take?", "a": "For a typical family house (about 120–180 m² of roof), building the new timber frame, battening and laying the covering usually takes 7 to 21 working days, depending on complexity and weather." },
       { "q": "What warranty do you give on the roof?", "a": "We give a 10-year warranty on carpentry, roof trusses and roofing work. Materials carry the manufacturer's warranty, up to 30–50 years for tiles and Gerard and Satjam systems." },
       { "q": "Which countries do you work in?", "a": "We build roofs in the Czech Republic, Slovakia, Germany and the Netherlands. Thanks to our experience abroad, we meet the building standards of all these countries." },
-      { "q": "What do you need to prepare a quote?", "a": "Ideally the project documents. For renovations, a few photos of the roof, rough dimensions, the location and your preferred covering are enough. We reply within 24 hours." }
+      { "q": "What do you need to prepare a quote?", "a": "Ideally the project documents. For renovations, a few photos of the roof, rough dimensions, the location and your preferred covering are enough. We will get back to you as soon as possible." }
     ]
   },
   "process": {
@@ -71,7 +71,7 @@
     "title": "From the first call to a finished roof",
     "lead": "Four simple steps. You always know what happens and when, with no budget surprises.",
     "steps": [
-      { "when": "Day 1", "t": "Enquiry", "d": "You call or fill in the form. We get back to you within 24 hours." },
+      { "when": "Day 1", "t": "Enquiry", "d": "You call or fill in the form. We get back to you and agree the next step." },
       { "when": "Free, no obligation", "t": "Survey and quote", "d": "From your drawings or an on-site survey we calculate the materials and send an exact written quote." },
       { "when": "On the agreed date", "t": "Construction", "d": "We order certified materials and build the roof to the manufacturer's specifications. A family house usually takes 7–21 working days." },
       { "when": "Handover", "t": "Done, with a warranty", "d": "We walk the roof with you, clean up the site and hand over the work with a 10-year workmanship warranty." }
@@ -92,7 +92,7 @@
   },
   "contact": {
     "kicker": "Contact",
-    "title": "A free quote within 24 hours",
+    "title": "A free, no-obligation quote",
     "lead": "Send us a few lines about your roof, or just call. The quote is free and comes with no obligation.",
     "phoneLabel": "Phone · Dalibor Mikus",
     "waLabel": "WhatsApp · send photos of your roof",
@@ -102,7 +102,7 @@
     "hours": "Mon–Fri 7:00–17:00 · Sat 8:00–12:00",
     "company": "MSroofing s.r.o. · Kukučínova 3379/22, 974 01 Banská Bystrica, Slovakia<br>Company ID: 57 408 165 · VAT: SK2122703055",
     "formTitle": "Free quote request",
-    "formLead": "We reply within 24 hours on working days.",
+    "formLead": "We will get back to you as soon as possible.",
     "hp": "Leave empty",
     "name": "Full name",
     "phone": "Phone",

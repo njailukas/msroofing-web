@@ -34,7 +34,7 @@
     "eyebrow": "12 Jahre Praxis in Deutschland und den Niederlanden",
     "h1": "Schlüsselfertige Dächer – vom Dachstuhl bis zur letzten Verblechung",
     "lead": "Dachstuhl, Eindeckung und Spenglerarbeiten aus einer Hand. 10&nbsp;Jahre Garantie auf die Arbeit und eine kostenlose Kalkulation.",
-    "heroStats": [{ "v": "200+", "l": "fertige Dächer" }, { "v": "10 Jahre", "l": "Garantie auf die Arbeit" }, { "v": "24 h", "l": "bis zum Angebot" }, { "v": "4 Länder", "l": "DE · NL · CZ · SK" }],
+    "heroStats": [{ "v": "200+", "l": "fertige Dächer" }, { "v": "10 Jahre", "l": "Garantie auf die Arbeit" }, { "v": "12 Jahre", "l": "Praxis in der EU" }, { "v": "4 Länder", "l": "DE · NL · CZ · SK" }],
     "svcKicker": "Leistungen",
     "svcTitle": "Alles für Ihr Dach aus einer Hand",
     "svcLead": "Neubau und Sanierung. Wählen Sie, was Sie brauchen, und sehen Sie, wie wir arbeiten und was Sie bekommen.",
@@ -63,7 +63,7 @@
       { "q": "Wie lange dauert ein schlüsselfertiges Dach?", "a": "Bei einem normalen Einfamilienhaus (ca. 120–180 m² Dachfläche) dauern Dachstuhlmontage, Lattung und Eindeckung in der Regel 7 bis 21 Arbeitstage, je nach Komplexität und Witterung." },
       { "q": "Welche Garantie geben Sie auf das Dach?", "a": "Auf Zimmererkonstruktionen, Dachstühle und Dachdeckerarbeiten geben wir 10 Jahre Garantie. Für die Materialien gilt die Herstellergarantie, bei Ziegeln und Systemen von Gerard und Satjam bis zu 30–50 Jahre." },
       { "q": "In welchen Ländern arbeiten Sie?", "a": "Wir bauen Dächer in Deutschland, den Niederlanden, Tschechien und der Slowakei. Dank unserer Auslandspraxis erfüllen wir die Baunormen all dieser Länder." },
-      { "q": "Was brauchen Sie für ein Angebot?", "a": "Idealerweise die Projektunterlagen. Bei Sanierungen genügen Fotos des Daches, ungefähre Maße, der Standort und Ihre Vorstellung zur Eindeckung. Wir melden uns innerhalb von 24 Stunden." }
+      { "q": "Was brauchen Sie für ein Angebot?", "a": "Idealerweise die Projektunterlagen. Bei Sanierungen genügen Fotos des Daches, ungefähre Maße, der Standort und Ihre Vorstellung zur Eindeckung. Wir melden uns schnellstmöglich bei Ihnen." }
     ]
   },
   "process": {
@@ -71,7 +71,7 @@
     "title": "Vom ersten Anruf bis zum fertigen Dach",
     "lead": "Vier einfache Schritte. Sie wissen immer, was wann passiert, ohne Überraschungen im Budget.",
     "steps": [
-      { "when": "Tag 1", "t": "Anfrage", "d": "Sie rufen an oder füllen das Formular aus. Wir melden uns innerhalb von 24 Stunden." },
+      { "when": "Tag 1", "t": "Anfrage", "d": "Sie rufen an oder füllen das Formular aus. Wir melden uns bei Ihnen und besprechen den nächsten Schritt." },
       { "when": "Kostenlos und unverbindlich", "t": "Aufmaß und Kalkulation", "d": "Anhand der Pläne oder eines Aufmaßes vor Ort berechnen wir das Material und senden ein genaues schriftliches Angebot." },
       { "when": "Zum vereinbarten Termin", "t": "Ausführung", "d": "Wir bestellen zertifiziertes Material und bauen das Dach nach Herstellervorgaben. Ein Einfamilienhaus meist in 7–21 Arbeitstagen." },
       { "when": "Übergabe", "t": "Fertig und mit Garantie", "d": "Wir gehen das Dach gemeinsam ab, räumen die Baustelle auf und übergeben mit 10 Jahren Garantie auf die Arbeit." }
@@ -92,7 +92,7 @@
   },
   "contact": {
     "kicker": "Kontakt",
-    "title": "Unverbindliches Angebot in 24 Stunden",
+    "title": "Kostenloses und unverbindliches Angebot",
     "lead": "Schreiben Sie uns ein paar Zeilen zu Ihrem Dach oder rufen Sie direkt an. Die Kalkulation ist kostenlos und unverbindlich.",
     "phoneLabel": "Telefon · Dalibor Mikus",
     "waLabel": "WhatsApp · Fotos vom Dach schicken",
@@ -102,7 +102,7 @@
     "hours": "Mo–Fr 7:00–17:00 · Sa 8:00–12:00",
     "company": "MSroofing s.r.o. · Kukučínova 3379/22, 974 01 Banská Bystrica, Slowakei<br>IČO: 57 408 165 · USt-IdNr.: SK2122703055",
     "formTitle": "Unverbindliche Anfrage",
-    "formLead": "Wir antworten werktags innerhalb von 24 Stunden.",
+    "formLead": "Wir melden uns schnellstmöglich bei Ihnen.",
     "hp": "Nicht ausfüllen",
     "name": "Vor- und Nachname",
     "phone": "Telefon",

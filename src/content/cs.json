@@ -27,14 +27,14 @@
   },
   "home": {
     "title": "Střechy na klíč, krovy a pokrývačské práce | MSroofing",
-    "desc": "Šikmé i ploché střechy na klíč, krovy, tašky, plech Gerard a Satjam, šindele a klempířina. 200+ realizací, záruka 10 let, kalkulace zdarma do 24 hodin.",
+    "desc": "Šikmé i ploché střechy na klíč, krovy, tašky, plech Gerard a Satjam, šindele a klempířina. 200+ realizací, záruka 10 let, kalkulace zdarma.",
     "ogTitle": "Střechy na klíč – od krovu po poslední oplechování | MSroofing",
     "ogDesc": "Tesaři a pokrývači s 12 lety praxe v Německu a Nizozemsku. 200+ realizací, záruka 10 let na práci, kalkulace zdarma.",
     "ogAlt": "Rodinný dům s novou plechovou střechou Gerard od MSroofing",
     "eyebrow": "12 let praxe v Německu a Nizozemsku",
     "h1": "Střechy na klíč – od krovu po poslední oplechování",
     "lead": "Krov, krytina i klempířina od jedné firmy. Záruka 10&nbsp;let na práci a kalkulace zdarma.",
-    "heroStats": [{ "v": "200+", "l": "dokončených střech" }, { "v": "10 let", "l": "záruka na práci" }, { "v": "24 h", "l": "do cenové nabídky" }, { "v": "4 země", "l": "CZ · SK · DE · NL" }],
+    "heroStats": [{ "v": "200+", "l": "dokončených střech" }, { "v": "10 let", "l": "záruka na práci" }, { "v": "12 let", "l": "praxe v EU" }, { "v": "4 země", "l": "CZ · SK · DE · NL" }],
     "svcKicker": "Služby",
     "svcTitle": "Všechno pro vaši střechu od jedné firmy",
     "svcLead": "Novostavby i rekonstrukce. Vyberte, co potřebujete, a podívejte se, jak to u nás probíhá a co dostanete.",
@@ -63,7 +63,7 @@
       { "q": "Jak dlouho trvá stavba střechy na klíč?", "a": "U běžného rodinného domu (cca 120–180 m² střechy) trvá montáž nového krovu, laťování a pokládka krytiny obvykle 7 až 21 pracovních dní podle složitosti konstrukce a počasí." },
       { "q": "Jakou záruku na střechu poskytujete?", "a": "Na tesařské konstrukce, krovy a pokrývačské práce dáváme záruku 10 let. Na prémiové materiály platí záruka výrobce, u tašek a systémů Gerard a Satjam až 30–50 let." },
       { "q": "Ve kterých zemích pracujete?", "a": "Střechy stavíme v České republice, na Slovensku, v Německu a v Nizozemsku. Díky zahraniční praxi splňujeme stavební normy všech těchto zemí." },
-      { "q": "Co potřebujete ke zpracování nabídky?", "a": "Ideálně projektovou dokumentaci. U rekonstrukcí stačí fotky střechy, přibližné rozměry, lokalita a představa o krytině. Ozveme se do 24 hodin." }
+      { "q": "Co potřebujete ke zpracování nabídky?", "a": "Ideálně projektovou dokumentaci. U rekonstrukcí stačí fotky střechy, přibližné rozměry, lokalita a představa o krytině. Ozveme se vám co nejdříve." }
     ]
   },
   "process": {
@@ -71,7 +71,7 @@
     "title": "Od prvního telefonu po hotovou střechu",
     "lead": "Čtyři jednoduché kroky. Víte, co se bude dít a kdy, bez překvapení v rozpočtu.",
     "steps": [
-      { "when": "Den 1", "t": "Poptávka", "d": "Zavoláte nebo vyplníte formulář. Ozveme se do 24 hodin a domluvíme další krok." },
+      { "when": "Den 1", "t": "Poptávka", "d": "Zavoláte nebo vyplníte formulář. Ozveme se vám a domluvíme další krok." },
       { "when": "Zdarma a nezávazně", "t": "Zaměření a kalkulace", "d": "Podle projektu nebo zaměření na místě spočítáme materiál a pošleme přesnou písemnou nabídku." },
       { "when": "V domluvený termín", "t": "Realizace", "d": "Objednáme certifikovaný materiál a střechu postavíme podle norem výrobce. Rodinný dům obvykle za 7–21 pracovních dní." },
       { "when": "Předání", "t": "Hotovo a se zárukou", "d": "Projdeme střechu spolu, uklidíme stavbu a předáme dílo se zárukou 10 let na práci." }
@@ -92,7 +92,7 @@
   },
   "contact": {
     "kicker": "Kontakt",
-    "title": "Nezávazná nabídka do 24 hodin",
+    "title": "Nezávazná cenová nabídka zdarma",
     "lead": "Napište nám pár řádků o své střeše, nebo rovnou zavolejte. Kalkulace je zdarma a k ničemu vás nezavazuje.",
     "phoneLabel": "Telefon · Dalibor Mikus",
     "waLabel": "WhatsApp · pošlete fotky střechy",
@@ -102,7 +102,7 @@
     "hours": "Po–Pá 7:00–17:00 · So 8:00–12:00",
     "company": "MSroofing s.r.o. · Kukučínova 3379/22, 974 01 Banská Bystrica, SK<br>IČO: 57 408 165 · DIČ: SK2122703055",
     "formTitle": "Nezávazná poptávka",
-    "formLead": "Odpovídáme do 24 hodin v pracovní dny.",
+    "formLead": "Ozveme se vám co nejdříve.",
     "hp": "Nevyplňujte",
     "name": "Jméno a příjmení",
     "phone": "Telefon",
